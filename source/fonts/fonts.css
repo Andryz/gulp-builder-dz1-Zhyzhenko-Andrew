@@ -1,0 +1,40 @@
+@font-face{
+	font-family: FiraSans-Bold;
+	src: url(FiraSans/FiraSans_Bold.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-BoldItalic;
+	src: url(FiraSans/FiraSans-BoldItalic.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-Italic;
+	src: url(FiraSans/FiraSans-Italic.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-Light;
+	src: url(FiraSans/FiraSans-Light.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-LightItalic;
+	src: url(FiraSans/FiraSans-LightItalic.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-Medium;
+	src: url(FiraSans/FiraSans-Medium.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-MediumItalic;
+	src: url(FiraSans/FiraSans-MediumItalic.ttf);
+}
+
+@font-face{
+	font-family: FiraSans-Regular;
+	src: url(FiraSans/FiraSans-Regular.ttf);
+}
+
