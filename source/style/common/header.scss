@@ -1,0 +1,63 @@
+.greating {
+  overflow: hidden;
+  position: relative;
+  padding: 150px 20px 50px;
+  background: #F44336;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+  &_text {
+    font: 45px 'Arial', sans-serif;
+    color: #fff;
+  }
+
+  &_picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 114px;
+    background: url('/assets/img/viking.png') no-repeat center;
+    transform: translate3D(100%, 0, 0);
+    transition: transform 0.5s;
+  }
+}
+
+.greating_picture.m--show {
+  transform: translate3D(0, 0, 0);
+}
+.welcome{
+  background: url('/assets/img/images_png/bg_welcome_mountains_1800.png') no-repeat center;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  
+  .authorize{
+    border: 2px solid #fff;
+    border-radius:4px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 27px;
+    color: #fff;
+    float: right;
+    margin-right: 100px;
+    margin-top: 24px;
+  }
+
+  .developer{
+    width: 380px;
+    height: 394px;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+}
+
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  } 
