@@ -1,7 +1,10 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+	- var title = 'Home page'
 
 block content
-  include ../common/_header
+	include ../common/about_me/header_about
+	
+block menu
+	include ../common/about_me/menu_about

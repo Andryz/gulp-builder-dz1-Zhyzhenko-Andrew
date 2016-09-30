@@ -1,35 +1,9 @@
-.greating {
-  overflow: hidden;
-  position: relative;
-  padding: 150px 20px 50px;
-  background: #F44336;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-
-  &_text {
-    font: 45px 'Arial', sans-serif;
-    color: #fff;
-  }
-
-  &_picture {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 114px;
-    background: url('/assets/img/viking.png') no-repeat center;
-    transform: translate3D(100%, 0, 0);
-    transition: transform 0.5s;
-  }
-}
-
-.greating_picture.m--show {
-  transform: translate3D(0, 0, 0);
-}
 .welcome{
   background: url('/assets/img/images_png/bg_welcome_mountains_1800.png') no-repeat center;
   background-size: cover;
   min-height: 100%;
   width: 100%;
+  position: relative;
   
   .authorize{
     border: 2px solid #fff;
@@ -46,9 +20,62 @@
   .developer{
     width: 380px;
     height: 394px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -196px;
+    margin-left: -190px;
+    background:rgba(252, 252, 252, 0.9); ;
     text-align: center;
+    border-radius: 4px;
     
+      .developer__avatar{
+        margin-top: 40px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+      }
+
+      ul.social__list{
+        text-align: center;
+        padding: 0;
+        font-size: 0px;
+
+        li.social__list-item{
+          display: inline-block;
+          padding: 0 20px;
+
+          a.social-link{
+            font-size: 30px;
+            text-decoration: none;
+            color: #6fd1c6;
+          }
+
+        }
+
+      }
+
+      ul.developer__nav{
+        padding: 0;
+        font-size: 0px;
+        width: 100%;
+
+        li.developer__nav-item{
+          display: inline-block;
+          background: #07ab98;
+
+          a.nav-link{
+            font-size: 16px;
+            background: #07ab98;
+            padding:15px;
+            text-decoration: none;
+            /*font-family:Roboto-Medium;*/
+            font-family: 'Roboto', sans-serif;
+
+          }
+        }
+
+      }
   }
 
 }

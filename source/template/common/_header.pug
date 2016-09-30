@@ -1,15 +1,31 @@
+-
+	var socialIcons = [
+	{name:'vk',
+	href:'#'},
+	{name:'github-alt',
+	href:'#'},
+	{name:'linkedin',
+	href:'#'}]
+-
+	var navigations = [
+	{name:'Мои работы',
+	href:'#'},
+	{name:'Обо мне',
+	href:'#'},
+	{name:'Блог',
+	href:'#'}]
 header.welcome
 	a.authorize Авторизоваться
 	.developer
-		img(src='/assets/img/images_png/i-am.png', alt='Andrew Zhyzhenko')
+		img.developer__avatar(src='/assets/img/images_png/i-am.png', alt='Andrew Zhyzhenko')
 		h1 Andrew Zhyzhenko
 		p Личный сайт веб разработчика
-		ul
-			li
-				a(href="")
-			li
-				a(href="")
-			li
-				a(href="")
-
-	
+		ul.social__list
+			each icon in socialIcons
+				li.social__list-item
+					a(href=icon.href class='social-link')
+						i(class='fa fa-'+icon.name aria-hidden='true')
+		ul.developer__nav
+			each navigation in navigations
+				li.developer__nav-item
+					a(href=navigation.href class='nav-link')= navigation.name

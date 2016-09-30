@@ -1,9 +1,5 @@
-html{
-	height: 100%;
-}
-body {
-  margin: 0;
-  height: 100%;
-}
-
+@import 'common/common';
+@import '../source/fonts/fonts_roboto.css';
+@import 'common/about_me/header_about';
+@import 'common/about_me/menu_about';
 @import 'common/header';
