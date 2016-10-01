@@ -49,7 +49,11 @@
     &__link {
         margin-right: 31px;
         font-size: 26px;
-        color: #fff;
+        color: rgba(252, 252, 252, 0.6);
+        &:hover{
+            color:#fff;
+            transition-duration: 0.5s;
+        }
     }
 }
 

@@ -39,8 +39,19 @@
 }
 
 @font-face{
-	font-family: BernierRegular-Regular;
-	src: url(..fonts/bernier/BERNIERRegular-Regular.otf);
+	font-family: BERNIERRegular-Regular;
+	src: url(../fonts/bernier/BERNIERRegular-Regular.otf);
+}
+
+@font-face {
+    font-family: 'bernier_regularregular';
+    src: url('bernierregular-regular.eot');
+    src: url('bernierregular-regular.eot?#iefix') format('embedded-opentype'),
+         url('bernierregular-regular.woff') format('woff'),
+         url('bernierregular-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 

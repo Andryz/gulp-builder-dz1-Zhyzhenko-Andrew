@@ -1,5 +1,6 @@
 .page-main {
     background: #efeee9;
+    padding-bottom: 29px;
 }
 
 .about-me {
@@ -9,11 +10,10 @@
     &__title {
         float: left;
         position: relative;
-        min-height: 600px;
         width: 49.1%;
         color: #373e42;
         font-size: 63px;
-        font-family: BernierRegular-Regular;
+        font-family: BERNIERRegular-Regular;
         &:before,
         &:after {
             content: '-';
@@ -31,12 +31,13 @@
         width: 50%;
         &__avatar {
             margin-top: 20px;
-            min-width: 449px;
+            width: 100%;
+            height: auto;
         }
         &__title {
             margin: 40px auto;
             font-size: 35px;
-            font-family: BernierRegular-Regular;
+            font-family: BERNIERRegular-Regular;
             color: #455a64;
             &:before,
             &:after {
@@ -72,7 +73,7 @@
         }
     }
     &__title {
-        font-family: BernierRegular-Regular;
+        font-family: BERNIERRegular-Regular;
         font-size: 35px;
         color: #455a64;
         text-align: center
@@ -114,7 +115,7 @@
 		}
 		&_js{
 			background:url(/assets/img/images_png/js.png) no-repeat center;
-			padding: 44px 0 0 0;
+			padding: 44px 33px 0 27px;
 		}
 		&_php{
 			background:url(/assets/img/images_png/html.png) no-repeat center;
@@ -124,15 +125,18 @@
 		}
 		&_node{
 			background:url(/assets/img/images_png/html.png) no-repeat center;
+			padding-right: 33px;
+		    padding-left: 33px;
+		    padding-top: 47px;
 		}
 		&_mongo{
 			background:url(/assets/img/images_png/html.png) no-repeat center;
 		}
 		&_git{
-			background:url(/assets/img/images_png/html.png) no-repeat center;
+			background:url(/assets/img/images_png/git.png) no-repeat center;
 		}
 		&_gulp{
-			background:url(/assets/img/images_png/html.png) no-repeat center;
+			background:url(/assets/img/images_png/gulp.png) no-repeat center;
 		}
 		&_bower{
 			background:url(/assets/img/images_png/html.png) no-repeat center;

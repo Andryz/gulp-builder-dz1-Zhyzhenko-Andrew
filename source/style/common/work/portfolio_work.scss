@@ -1,0 +1,52 @@
+.my-work__title {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 56px 0;
+    text-align: center;
+    background: #faf8f0;
+    color: #373e42;
+    font-size: 63px;
+    font-family: BERNIERRegular-Regular;
+    &:before,
+    &:after {
+        content: '-';
+        color: #000;
+        opacity: 0.3;
+    }
+    &__img-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -253px;
+
+    }
+}
+.slider{
+    width: 100%;
+    background: #f0efe9;
+    &__portfolio,
+    &__detail{
+        float: left;
+        width: 50%;
+    }
+    &__detail__title{
+        color: #373e42;
+        font-size: 35px;
+        font-family: BERNIERRegular-Regular;
+    }
+    &__detail__technologies{
+        color: #20b5a1;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+}
+.btn-view__link{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 16px 20px 16px 50px;
+    background: #20b5a1; 
+}
