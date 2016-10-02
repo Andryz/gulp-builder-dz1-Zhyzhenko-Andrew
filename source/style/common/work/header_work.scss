@@ -72,25 +72,23 @@
     }
     &__link {
         display: block;
+        font-size: 26px;
         position: absolute;
         left: 50%;
         bottom: 74px;
         margin-left: -13px;
-        font-size: 26px;
         color: rgba(252, 252, 252, 0.6);
         &:hover {
             color: #fff;
-            transition-duration: 0.3s;
+            transition-duration: 0.5s;
         }
     }
 }
 
-.traingle {
-    fill: #eeebdf;
+.traingle-work {
+    fill: #faf8f0;
 }
-.traingle-left{
-    fill: #efeee9;
-}
+
 
 .portfolio_img {
     background: url('/assets/img/images_png/portfolio_1800.png') no-repeat center;

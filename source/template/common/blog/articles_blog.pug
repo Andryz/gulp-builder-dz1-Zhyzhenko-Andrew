@@ -1,2 +1,227 @@
-.page-articles
-	
+.page-articles.clearfix 
+	ul.list-article
+		li.list-article__name
+			a(href="#" class='list-article__name__link').
+				Шпаргалка по Git — основные команды
+		li.list-article__name
+			a(href="#" class='list-article__name__link').
+				Conemu — эмулятор консольного окна. Установка, настройка и работа
+		li.list-article__name
+			a(href="#" class='list-article__name__link').
+				Gulp. Установка и настройка.
+	section.section
+		article.article
+			h3.article__title Шпаргалка по Git — основные команды 
+			time.article__data 02 откября 2016
+			p.article__text.
+				Ниже приведены подсказки по использованию git в различных ситуациях. Я использую подобную шпаргалку для быстрого копипаста, чтобы не отвлекаться, когда голова занята сложными задачами. По мере создания новых инструкций, статья будет обновляться.
+				Шпаргалка по Git — основные команды
+			p.article__text.
+				Заходим в папку, в которую склонирован репозиторий. С этого начинается любая работа
+			p.article__text.
+				cd диск:/папка_репозитория
+			h4.article__text__title.
+				 Игнорирование файлов и директорий с помощью .gitignore
+			p.article__text.
+				Самое первое, что мне следует сделать после инициализации нового Git репозитория, это - создать файл .gitignore. Файл .gitignore используется для того, чтобы отфильтровывать те файлы и каталоги, изменение которых вы не хотите отслеживать в Git репозитарии. Пример:
+			pre.article__code.
+				# Lines starting with '#' are considered comments.
+				# Ignore any file named foo.txt.
+				foo.txt
+				# Ignore (generated) html files,
+				*.html
+				# except foo.html which is maintained by hand.
+				!foo.html
+				# Ignore objects and archives.
+				*.[oa]
+			p.article__text.
+				Вы можете также расположить .gitignore файлы в другой директории в вашем рабочем дереве, и их правила будут распространяться только на эти директории и их поддиректории. Файлы .gitignore как и любые другие файлы могут быть добавлены в репозиторий (выполните git add .gitignore и git commit как обычно)
+			h4.article__text__title.
+				Клонирование репозитория
+			p.article__text.
+				git clone https://github.com/jashkenas/underscore.git
+			h4.article__text__title.
+				Обновление данных
+			p.article__text.
+				git pull - обновление данных
+			p.article__text.
+				git pull origin name_branche - обновление данных из определнной ветки
+			h4.article__text__title.
+				Добавление изменений в комит (индексация изменений)
+			p.article__text.
+				git add . - добавление всех недобавленных файлов в комит (внести в индекс все изменения, включая новые файлы)
+			p.article__text.
+				git add file1 file2 ... fileN - добавление только указанных файлов
+			h4.article__text__title.
+				Удаление из комита
+			p.article__text.
+				git rm file1 file2 ... fileN - удаление указанных файлов из комита (git rm Documentation/\*.txt)
+			p.article__text.
+				git rm -f file1 file2 ... fileN - удаление файла из комита и с жесткого диска:
+			h4.article__text__title.
+				Комит в локальный репозиторий
+			p.article__text.
+				git commit "примечание" - только файлы, которые были обработаны с помощью git add/rm
+			p.article__text.
+				git commit -a -m "примечание"-  совершит коммит, автоматически индексируя изменения в файлах проекта. Новые файлы при этом индексироваться не будут! Удаление же файлов будет учтено.
+			h4.article__text__title.
+				Создание ветки
+			p.article__text.
+				git checkout --track -b name_of_newbranch origin/master - создание ветки локально
+			p.article__text.
+				git push origin local_branch_name:remote_branch_name - создание удаленной ветки
+			p.article__text.
+				git branch -m <имя_ветки> <новое_имя_ветки> - перименование ветки
+			p.article__text.
+				git branch -d <имя_ветки> - удалить ветку
+			h4.article__text__title.
+				Поместить файл в удаленный репозиторий
+			p.article__text.
+				git push origin name_branche - поместить изменения в заданную ветку
+			p.article__text.
+				git push - помесить изменения
+			h4.article__text__title.
+				Откаты
+			p.article__text.
+				git checkout -- file.txt - вернуть файл на состоние последнего коммита (локально)
+			p.article__text.
+				git reset --hard - откатиться к предыдущей сохраненной версии
+			h4.article__text__title.
+				Состояние проекта
+			p.article__text.
+				git status - выводит информацию обо всех изменениях, внесенных в дерево директорий проекта по сравнению с последним коммитом рабочей ветки
+		article.article
+			h3.article__title.
+				Conemu — эмулятор консольного окна. Установка, настройка и работа 
+			time.article__data 02 откября 2016
+			p.article__text Для установки перейдём на официальный сайт:
+				a conemu.github.io
+			p.article__text.
+				Полное название ConEmu-Maximus5. ConEmu — не самостоятельная консоль, а эмулятор консольного окна для windows. Иными словами — это просто некая графическая оболочка, которая расширяет возможности работы с уже известными нам консолями, такими, как: cmd, powershell, git bash и пр.
+			h4.article__text__title.
+				Настройки
+			pre.article__text.
+				Startup
+				— Specified named task
+				{Git bash}
+			pre.article__text.
+				Tasks
+				/dir «F:\Dropbox\WebServers\home»
+			pre.article__text.
+				Features
+				— colors
+				— Schemes : Monokai
+				— tabs
+				— always show
+			h4.article__text__title.
+				Cамые базовые команды
+			pre.article__text.
+				pwd — показать текущий каталог
+				cd — переход в заданную папку
+				cd —	— перейти в предыдущую директорию
+				ls	— показывает список файлов текущей папки
+				ls -f	— покажет также .htaccess
+				cp — копирование файлов/папок
+				mv — переименовать или переместить файлы/папки
+				rm — удаление файлов/папок
+				rm -r — удаление папки и её содержимого
+				mkdir	— создать папку
+				clear — очистить консоль
+				touch	— создать файл
+		article.article
+			h3.article__title Gulp. Установка и настройка.
+			time.article__data 02 откября 2016
+			p.article__text.
+				Gulp.js это потоковый сборщик проектов на JavaScript. Свою популярность он обрёл благодаря Stream, что делает его работу очень быстрой.
+			p.article__text.
+				В этой статье мы поговорим о установки и настройке Галпа.
+			p.article__text.
+				Сразу оговорюсь, что я работаю под Windows и какие-то нюансы на других операционных системах могут отличаться.
+			p.article__text.
+				Для начало нам нужно установить Node.js , который является платформой для работы Gulp, основанной на движке V8, превращающая JavaScript из узкоспециализированного языка в язык общего назначения (машинный код).
+			p.article__text.
+				Потом переходим в командую строку (Win+R) в которой будем писать все наши команды.
+			p.article__text.
+				Для того, что бы Гальп заработал его нужно установить глобально (на машину) и локально (в папку нашего проекта).
+			h4.article__text__title.
+				Начнем с глобальной установки, выполнив команду:
+			pre.article__code.
+				npm install -g gulp
+			p.article__text.
+				Потом перейдём в папку нашего проекта и создадим пакет зависимостей в файле package.json командой
+			pre.article__code.
+				npm init
+			p.article__text.
+				В нем пишем:
+			pre.article__text.
+				имя («name») нашего пакета
+				версию («version»)
+				описание («description»)
+				фаил где будут прописаны наши задачи («entry point») , который по умолчанию index.js, но обычно его называют gulpfile.js и он располагается в папке проекта.
+				какой-то тест («test command») скрипт («scripts») я в нем пока не разобрался
+				Репозиторий Git («git repository»)
+				ключевые слова («keywords»)
+				автор («author»)
+				лицензия («license») по умолчанию «ISC»
+				и соглашаемся на вопрос («Is this ok?») нажимая Энтер. Если что-то не устраивает, то пишем no  и по новой создаем фаил зависимостей командой npm init
+			h4.article__text__title.
+				После этого устанавливаем сами зависимости. С начало ставим Gulp
+			pre.article__code.
+				npm install --save-dev gulp
+			p.article__text.
+				А потом все остальное, что Вы будите использовать
+			pre.article__code.
+				npm install --save-dev gulp-autoprefixer 
+				npm install --save-dev serve-static
+				npm install --save-dev gulp-cssmin
+				npm install --save-dev gulp-livereload
+				npm install --save-dev gulp-uncss
+				npm install --save-dev gulp.spritesmith
+				npm install --save-dev connect
+			p.article__text.
+				Обратите внимание на использование флага —save-dev при установки плагинов Gulp в проект. Это гарантирует что для каждого из них будет добавлена запись в список devDependencies  файла package.json. И выглядеть это будет так:
+			pre.article__code.
+				"devDependencies": {
+				"connect": "^3.3.0"
+				"gulp-autoprefixer": "^1.0.1",
+				"gulp-cssmin": "^0.1.6",
+				"gulp-livereload": "^2.1.1",
+				"gulp-uncss": "^0.4.5",
+				"gulp.spritesmith": "^1.3.0",
+				"serve-static": "^1.6.2"
+				}
+			p.article__text.
+				Если использовать не —save-dev ,  а —save , то зависимости добавляются в список dependencies . Зависимости в списке dependencies непосредственно участвую в проекте, зависимости в списке devDependencies лишь помогают собирать проект. Это наглядно видно в примере сборки сайта на react.js https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux
+				Если мы опустим —save или —save-dev , то зависимости не будут добавляться в package.json
+			p.article__text.
+				Для установки конкретной версии используйте @, т.е. плагин@новер весии. Пример:
+			pre.article__code.
+				npm install --save-dev gulp-livereload@1.5.0
+			p.article__text.
+				Создания файла package.json позволит в дальнейшем легко установить все необходимые для проекта пакеты используя команду
+			pre.article__code.
+				npm install
+			h4.article__text__title.
+				Для проверки версии используем команду
+			pre.article__code.
+				gulp --version
+			p.article__text.
+				если все окей, то увидим
+			pre.article__code.
+				[gulp] CLI version 3.8.7
+				[gulp] Local version 3. 8.7
+			p.article__text.
+				Для обновления версий плагинов можно использовать команду. Если CLI версия устарела, то в команду просто
+				добавьте -g
+			pre.article__code.
+				npm update gulp
+			p.article__text.
+				Для удаления пишем команду
+			pre.article__code.
+				npm uninstall название модуля
+			p.article__text.
+				Соответственно для глобального удаления Гальпа пишем команду
+			pre.article__code.
+				npm uninstall -g gulp
+			h4.article__text__title.
+				Все команды npm выполняются из папки нашего проека!

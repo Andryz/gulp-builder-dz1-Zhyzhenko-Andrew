@@ -5,27 +5,11 @@
     min-height: 396px;
     width: 100%;
     position: relative;
-    &:before,
-    &:after {
+    &__triangle {
+        width: 100%;
         position: absolute;
-        content: '';
-        bottom: 0;
-    }
-    &:before {
-        width: 0;
-        height: 0;
-        left: 0;
-        border-style: solid;
-        border-width: 158px 0 0 900px;
-        border-color: transparent transparent transparent #faf8f0;
-    }
-    &:after {
-        width: 0;
-        height: 0;
-        right: 0;
-        border-style: solid;
-        border-width: 0 0 154px 900px;
-        border-color: transparent transparent #faf8f0 transparent;
+        bottom: -4px;
+        margin: 0 auto;
     }
 }
 
@@ -34,7 +18,11 @@
     padding: 28px 328px 0 0;
     &__link {
         font-size: 42px;
-        color: #fff;
+        color:rgba(252, 252, 252, 0.6);
+        &:hover{
+            color:#fff;
+            transition-duration: 0.3s;
+        }
     }
 }
 
@@ -74,6 +62,7 @@
         font-size: 63px;
         font-family: BERNIERRegular-Regular;
         color: #fff;
+        line-height: 44px;
         margin-bottom: 5px;
         &:before,
         &:after {
@@ -102,8 +91,11 @@
     position: absolute;
     width: 303px;
     height: 208px;
-    top: 120px;
+    top: 210px;
     left: 50%;
     margin-left: -151.5px;
-    background: url('assets/img/images_png/blog_1800.png') no-repeat center;
+    background: url('/assets/img/images_png/blog_1800.png') no-repeat center;
+}
+.traingle-blog{
+    fill: #fff;
 }

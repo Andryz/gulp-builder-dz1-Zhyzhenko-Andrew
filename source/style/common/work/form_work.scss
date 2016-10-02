@@ -13,9 +13,10 @@
     width: 100%;
     font-size: 63px;
     font-family: BERNIERRegular-Regular;
+    line-height: 35px;
     color: #455a64;
     &_hyphen {
-        margin: 68px 0 0 0;
+        margin: 68px 0 20px 0;
         &:before,
         &:after {
             content: ' - ';
@@ -27,7 +28,7 @@
     &__img-wrapper {
         position: absolute;
         left: 50%;
-        top: 44px;
+        top: 23px;
         margin-left: -249.5px;
     }
 }
@@ -46,7 +47,7 @@
     }
     &__quote__text {
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         color: #455a64;
         margin-bottom: 28px;
@@ -88,6 +89,7 @@
         width: 100%;
         font-size: 35px;
         font-family: BERNIERRegular-Regular;
+        line-height: 27px;
         color: #455a64;
         &:before,
         &:after {
@@ -147,6 +149,9 @@
 }
 //- КОНЕЦ ФОРМЫ
 .page-up{
+    display: block;
+    height: 26px;
+    width: 26px;
     margin: 70px 0 0 49.3%;
     font-size: 26px;
     color:rgba(252, 252, 252, 0.6);
