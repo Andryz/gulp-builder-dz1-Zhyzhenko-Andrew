@@ -1,0 +1,157 @@
+.page-form {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 1280px;
+    background: url(/assets/img/images_png/bg_work_mountains-sea_1800.png) no-repeat center;
+    background-size: cover;
+    margin-bottom: -151px;
+}
+
+.say-about-me__title {
+    text-align: center;
+    width: 100%;
+    font-size: 63px;
+    font-family: BERNIERRegular-Regular;
+    color: #455a64;
+    &_hyphen {
+        margin: 68px 0 0 0;
+        &:before,
+        &:after {
+            content: ' - ';
+            color: #000;
+            opacity: 0.3;
+            font-size: 35px;
+        }
+    }
+    &__img-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 44px;
+        margin-left: -249.5px;
+    }
+}
+    // ОТЗЫВЫ
+.reviews {
+    margin: 70px auto;
+    max-width: 750px;
+    &__left-wrapper {
+        float: left;
+        width: 50%;
+    }
+    &__quotes {
+        color: #dde0e0;
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+    &__quote__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #455a64;
+        margin-bottom: 28px;
+    }
+    &__human__photo {
+        float: left;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__human__detail{
+        float: left;
+        margin: 20px 0 0 20px;
+        width: 270px;
+        color: #20b5a1;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__human__name{
+        font-weight: 700;
+    }
+    &__human__about{
+        font-weight: 300;
+
+    }
+    // СТИЛИ ДЛЯ ФОРМЫ
+}
+.feedback{
+    overflow: hidden;
+    width: 380px;
+    min-height: 438px;
+    margin: 0 auto;
+    background: rgba(#eaeaea, 0.8);
+    border-radius:4px;
+    &__title{
+        margin:38px 0;
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+        font-family: BERNIERRegular-Regular;
+        color: #455a64;
+        &:before,
+        &:after {
+            content: ' - ';
+            color: #000;
+            opacity: 0.3;
+            font-size: 35px;
+        }
+
+    }
+}
+.form__style{
+    width: 300px;
+    margin: 0 20px 20px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #373e42;
+    border-radius:5px;
+    background:#fff;
+    border:none;
+    padding:13px 20px;
+
+}
+.form__btn{
+    &__item{
+        float: left;
+        width: 190px;
+        border:none;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        background: #26bbaa;
+        color:rgba(#fff, 0.8);
+        padding:13px 0;
+        text-align: center;
+        outline:none;
+        &:hover{
+            color:#fff;
+            cursor: pointer;
+        }
+        &:active{
+            background: #268b8b;
+            outline:0;
+        }
+        &_submit{
+            border-right:1px solid #82cfc9;
+        }
+        &_clear{
+            border-left:1px solid #82cfc9;
+            &:focus{
+                outline: 0;
+            }
+        }
+
+    }
+}
+//- КОНЕЦ ФОРМЫ
+.page-up{
+    margin: 70px 0 0 49.3%;
+    font-size: 26px;
+    color:rgba(252, 252, 252, 0.6);
+    &:hover{
+        color:#fff;
+        transition-duration: 0.5s;
+    }
+}

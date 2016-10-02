@@ -1,3 +1,4 @@
+/*
 @font-face{
 	font-family: Roboto-Bold;
 	src: url(../fonts/roboto/Roboto-Bold.ttf);
@@ -42,18 +43,18 @@
 	font-family: BERNIERRegular-Regular;
 	src: url(../fonts/bernier/BERNIERRegular-Regular.otf);
 }
-
+*/
 @font-face {
-    font-family: 'bernier_regularregular';
-    src: url('bernierregular-regular.eot');
-    src: url('bernierregular-regular.eot?#iefix') format('embedded-opentype'),
-         url('bernierregular-regular.woff') format('woff'),
-         url('bernierregular-regular.ttf') format('truetype');
+    font-family: 'BERNIERRegular-Regular';
+    src: url('../fonts/bernier/bernierregular-regular.eot');
+    src: url('../fonts/bernier/bernierregular-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bernier/bernierregular-regular.woff') format('woff'),
+         url('../fonts/bernier/bernierregular-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
-
+//../fonts/bernier/
 

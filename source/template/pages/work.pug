@@ -3,14 +3,14 @@ extends ../_template
 block variables
 	- var title = 'Home page'
 
-block content
+block header
 	include ../common/about_me/header_about
 
 block main
 	include ../common/work/portfolio_work
 	
-block contact
-	include ../common/about_me/contact_about
+block content
+	include ../common/work/form_work
 	
 block footer
 	include ../common/about_me/footer_about
