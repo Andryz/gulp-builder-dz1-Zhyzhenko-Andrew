@@ -21,24 +21,20 @@
     margin-right: 100px;
     margin-top: 24px;
     &:hover{
-      border: 2px solid #fff;
-      color: #fff;
-    }
-    &:active{
-      color: rgba(#a0bfbe, 0.5);
-      background: rgba(#fff, 0.9);
+    color: rgba(#07ab98, 0.85);
+    background: rgba(#fff, 0.9);
     }
 }
 
 .developer {
-    width: 380px;
+    min-width: 380px;
     min-height: 394px;
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -196px 0 0 -190px;
-    background: rgba(252, 252, 252, 0.9);
+    background: rgba(252, 252, 252, 0.75);
     text-align: center;
     border-radius: 4px;
     &__avatar {
@@ -75,7 +71,7 @@
     &__link {
         font-size: 30px;
         text-decoration: none;
-        color: rgba(#6fd1c6, 0.8);
+        color: rgba(#6fd1c6, 0.9);
         &:hover{
           color: #00bfa5;
         }
@@ -91,16 +87,13 @@
     &__link {
         display:block; 
         font-size: 16px;
-        background: rgba(#07ab98, 0.8);
-        padding: 13px 30.92px;
+        background: rgba(#07ab98, 0.7);
+        padding: 13px 31px;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        color: rgba(#fff, 0.8);
+        font-weight: 400;
+        color:#fff;
         &:hover{
-            color:#fff;
-        }
-        &:active{
             background: rgba(#268b8b, 0.8);
         }
         &_work{

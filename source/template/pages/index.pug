@@ -1,7 +1,7 @@
-extends ../_template
+extends ../common/_template
 
 block variables
-	- var title = 'Home page'
+	- var title = 'Welcome'
 
-block header
-	include ../common/authorize
+block authorize
+	include ../authorize/authorize

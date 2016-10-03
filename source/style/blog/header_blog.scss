@@ -8,40 +8,8 @@
     &__triangle {
         width: 100%;
         position: absolute;
-        bottom: -4px;
+        bottom: -6px;
         margin: 0 auto;
-    }
-}
-
-.menu-blog {
-    float: right;
-    padding: 28px 328px 0 0;
-    &__link {
-        font-size: 42px;
-        color:rgba(252, 252, 252, 0.6);
-        &:hover{
-            color:#fff;
-            transition-duration: 0.3s;
-        }
-    }
-}
-
-.social-blog {
-    float: left;
-    padding: 28px 0 0 328px;
-    font-size: 0;
-    &__item {
-        display: inline-block;
-        vertical-align: top;
-    }
-    &__link {
-        margin-right: 31px;
-        font-size: 26px;
-        color: rgba(252, 252, 252, 0.6);
-        &:hover {
-            color: #fff;
-            transition-duration: 0.5s;
-        }
     }
 }
 

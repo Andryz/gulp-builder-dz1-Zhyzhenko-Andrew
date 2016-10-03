@@ -1,13 +1,13 @@
-extends ../_template
+extends ../common/_template
 
 block variables
-	- var title = 'Home page'
+	- var title = 'Blog'
 
 block header
-	include ../common/blog/header_blog
+	include ../blog/header_blog
 
 block main
-	include ../common/blog/articles_blog
+	include ../blog/articles_blog
 	
 block footer
-	include ../common/about_me/footer_about
+	include ../about_me/footer_about

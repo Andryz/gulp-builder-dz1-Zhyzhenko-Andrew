@@ -30,3 +30,17 @@ footer *{
 	box-sizing: border-box;
 }
 
+.content-conteiner {
+	min-height: 100%;
+  	margin-bottom: -141px; // Равно высоте футера
+	&:after {
+  		content: '';
+  		display: block;
+  		height: 141px; // Равно высоте футера
+	}
+
+}
+
+
+
+

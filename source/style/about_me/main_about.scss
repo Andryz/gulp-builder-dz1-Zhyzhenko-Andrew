@@ -21,15 +21,19 @@
         }
         &__img-wrapper {
             position: absolute;
-            left: 27px;
+            left: 50%;
             top: -36px;
+            margin-left: -176px;
         }
     }
     &__detail {
         float: left;
         width: 50%;
-        &__avatar {
+        &__img-wrapper{
             margin-top: 20px;
+            max-width: 450px;
+        }
+        &__avatar {
             width: 100%;
             height: auto;
         }
@@ -39,6 +43,7 @@
             font-family: BERNIERRegular-Regular;
             line-height: 27px;
             color: #455a64;
+            text-align: center;
             &:before,
             &:after {
                 content: ' - ';

@@ -1,7 +1,7 @@
 block variables
 
 doctype html
-html
+html(lang='ru')
   head
     meta(charset="utf-8")
     title #{title}
@@ -29,7 +29,9 @@ html
     <![endif]-->
 
   body
-    block header
-    block main
-    block content
-    block footer
+    block authorize
+        block header
+        .content-conteiner
+            block main
+            block content
+        block footer
