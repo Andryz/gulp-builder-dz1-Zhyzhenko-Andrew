@@ -1,0 +1,645 @@
+@media screen and (max-width: 1200px){
+	// ABOUT ME
+	.page-header {
+	    background: url(/assets/img/images_png/bg_about_mountains_1200.png) no-repeat center;
+	    background-size: cover;
+	    background-position: top;
+	}    
+	.about-me__title{
+		width: 100%;
+	}
+	.about-me__detail{
+		width: 100%;
+		text-align: center;
+	}
+	.about-me__detail__img-wrapper{
+		margin: 1.25rem auto;
+	}
+	.about-me__detail__text{
+		margin: 0 auto 0.875rem auto;
+	}
+	.programming__technologies{
+		margin-right: 36px;	
+	}
+	.page-header__conteiner {
+    width: 100%;
+	}
+	.page-contact {
+    	min-height: 976px;
+	}
+	// WORK
+	.slider__portfolio__img {
+    	padding: 93px 0 0 0px;
+	}
+	.slider__detail__wrapper{
+		margin: 252px 0 0 17%;
+	}
+	.page-form {
+		background: url(/assets/img/images_png/bg_work_mountains-sea_1200.png) no-repeat center;
+	}
+	// BLOG
+	.page-header-blog {
+    	background: url(/assets/img/images_png/bg_about_mountains_1200.png) no-repeat center;
+		background-position:top;
+	}
+	.blog_img {
+		top:190px;
+		margin-left: -136.5px;
+	}
+	.section {
+		width: auto;
+		max-width: 64%;
+	}
+	.page-articles {
+    	padding: 0 0 0 128px;
+	}
+	// AUTHORIZE
+	.welcome {
+    	background: url(/assets/img/images_png/bg_welcome_mountains_1200.png) no-repeat center;
+   		background-size: cover;
+   	}
+	.authorize {
+		margin-right: 20px;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+	.content-conteiner {
+	  	margin-bottom: -212px; // Равно высоте футера
+		&:after {
+	  		height: 212px; // Равно высоте футера
+		}
+	}
+	// FOOTER
+	.page-footer {
+		height: 212px;
+	}
+	.footer__nav {
+    width: 100%;
+    text-align: center;
+	}
+	.footer__social {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+	}
+	.footer__about-me {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    }
+    .copyrate {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+	}
+
+		// WORK SLIDER
+	.slider {
+    	min-height: 1014px;
+    	overflow: hidden;
+    }
+    .slider__detail {
+    	width: 100%;
+    	height: auto;
+    }
+    .slider__detail__wrapper {
+    	margin: 92px auto 19px auto;
+    }
+    .slider__detail__title {
+    	text-align: center;
+    	font-size: 30px;
+    	margin-bottom: 10px;
+    }
+    .slider__detail__technologies {
+    	text-align: center;
+    	padding: 15px 0;
+    	margin-bottom: 34px;
+    }
+    .slider__detail__btn-view{
+    	text-align: center;
+    }
+    .slider__portfolio {
+    	width: 100%;
+    	height: auto;
+    }
+    .slider__portfolio__img {
+    	text-align: center;
+    }
+    .slider__arrow_left {
+    	top: 107px;
+    	padding: 493px 100px 493px 30px;
+    }
+    .slider__arrow_right {
+    	top: 372px;
+    	padding: 493px 30px 493px 100px;
+    }
+    .slider__list {
+    }
+    // BLOG
+    .page-articles {
+    	padding: 0 36px 0 24px;
+	}
+    .list-article {
+    	display: none;
+    }
+    .section {
+    	margin: 0;
+    	max-width: 100%;
+	}
+	.article {
+		padding: 50px 0;
+	}
+	.article__title {
+    	font-size: 30px;
+    	margin-bottom: 20px;
+	}
+	.article__data {
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+	.article__text {
+		font-size: 14px;
+	}
+	.article__text__title {
+		font-size: 18px;
+	}
+	.article__code {
+    	font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	// ABOUT ME
+	.page-header {
+	    background: url(/assets/img/images_png/bg_about_mountains_768.png) no-repeat center;
+	    background-size: cover;
+	    background-position: top;
+	    min-height: 506px;
+	}    
+	.traingle {
+		fill: #efeee9;
+	}
+	.portfolio_img {
+		background-size: 100%;
+		height: 460px;
+	}
+	.about-me {
+    width: 100%;
+	}
+	.about-me__title {
+		font-size: 49px;
+		margin-top: 40px;
+	}
+	.about-me__title__img-wrapper {
+    	width: 244px;
+   		margin-left: -122px;
+   		top:-12px;
+	}
+	.about-me__detail__title{
+		font-size: 30px;
+	}
+	.about-me__detail__text {
+		font-size: 14px;
+		&:last-child{
+			margin-bottom:48px;
+		}
+	}
+	.skills {
+    	width: 100%;
+    	padding: 20px 0 29px 0;
+    	line-height: 20px;
+	}
+	.skills__title{
+		font-size: 30px;
+	}
+	.skills__title_hyphen {
+		margin-top: 28px;
+	}
+	.skills__description {
+    	max-width: 472px;
+    	margin: 20px auto 50px auto;
+    	font-size: 14px;
+	}
+	.programming {
+    	font-size: 21px;
+    	text-align: center
+	}
+	.programming__items {
+		text-align: center;
+	}
+	.page-contact {
+    	min-height: 860px;
+	}
+	.contact__list {
+		margin-top: -220px;
+	}
+	// WORK
+	.my-work__title {
+    	font-size: 49px;
+    	padding: 38px 0;
+	}
+	.my-work__title__img-wrapper {
+		width: auto;
+    	max-width: 392px;
+    	margin-left: -190px;
+    	margin-top: -13px;
+	}
+	.page-form {
+    	background: url(/assets/img/images_png/bg_work_mountains-sea_768.png) no-repeat center;
+    	min-height: 978px;
+	}
+	.say-about-me__title {
+			font-size: 0;
+		&_hyphen {
+	        margin: 50px 0 20px 0;
+	        font-size: 49px;
+	        &:before{
+	            content: ' - ';
+	            color: #455a64;
+	            opacity: 1;
+	            font-size: 49px;
+	        }
+	        &:after {
+	        	font-family: BERNIERRegular-Regular;
+	            content: ' ГОВОРЯТ - ';
+	            color: #455a64;
+	            font-size: 49px;
+	            opacity: 1;
+	        }
+	    }
+	}
+	.say-about-me__title__img-wrapper {
+	    margin-left: -210px;
+	    top: -9px;
+	    max-width: 438px;
+	}
+	.reviews {
+    	margin: 0 auto 50px auto;
+	}
+	.reviews__left-wrapper {
+		margin: 0 3%;
+   		width: 44%;
+   	}
+   	.reviews__quote__text {
+   		font-size: 14px;
+   	}
+	.reviews__human__detail {
+		width: auto;
+		max-width: 270px;
+	}
+	.feedback {
+		width: 348px;
+		min-height: 400px;
+	}
+	.feedback__title {
+		margin: 38px 0 20px 0;
+		font-size: 30px;
+	}
+	.form__style {
+		width: 268px;
+		font-size: 14px;
+	}
+	.form__btn__item {
+		width: 174px;
+	}
+	// BLOG
+	.page-header-blog {
+    	background: url(/assets/img/images_png/bg_about_mountains_768.png) no-repeat center;
+		background-position:top;
+		min-height: 506px;
+	}
+	.about-developer-blog {
+		top:115px;
+	}
+	.about-developer-blog__title {
+    	font-size: 49px;
+	}
+	.about-developer-blog__info {
+		font-size: 14px;
+	}
+	.blog_img {
+		background-size: 220px;
+    	top: 218px;
+    	margin-left: -144.5px;
+	}
+	.page-header-blog__link_arrow{
+		display: block;
+		bottom:52px;
+	}
+	// AUTHORIZE
+	.welcome {
+    	background: url(/assets/img/images_png/bg_welcome_mountains_768.png) no-repeat center;
+   		background-size: cover;
+   	}
+
+}
+
+@media screen and (max-width: 515px){
+	.content-conteiner {
+	  	margin-bottom: -270px; // Равно высоте футера
+		&:after {
+	  		height: 270px; // Равно высоте футера
+		}
+	}
+	// FOOTER
+	.page-footer {
+    	height: 270px;
+	}
+	.footer__nav {
+		margin-left: 0;
+	}
+	.footer__nav__item {
+		padding: 30px 5px;
+	}
+	.footer__nav__link {
+		font-size: 13px;
+	}
+	.footer__about-me, .copyrate {
+    	font-size: 13px;
+	}
+	.footer__about-me_wrapper {
+    	border: none;
+	}
+		// WORK SLIDER
+	.slider {
+		height: auto;
+    	min-height: 570px;
+	}
+	.slider__detail__wrapper {
+    	margin: 26px auto 19px auto;
+    	width: 100%;
+	}
+	.slider__detail__title {
+		margin: 0 auto 10px auto;
+		width: 270px;
+		font-size: 21px;
+	}
+	.slider__detail__technologies {
+		font-size: 14px;
+		padding: 5px 0;
+	}
+	.btn-view__link {
+		font-size: 14px;
+	}
+	.slider__portfolio {
+		height: 375px;
+	}
+	.slider__portfolio__img {
+		margin: 0 auto;
+    	padding: 59px 0 0 0px;
+    	width: 248px;
+	}
+	.slider__list {
+		bottom:10px;
+	}
+	.slider__arrow_left {
+    	top: 179px;
+    	padding: 270px 38px 270px 4px;
+	}
+	.slider__arrow_right {
+    	top: 372px;
+    	padding: 270px 4px 270px 38px;
+	}
+	// WORK
+	.say-about-me__title{
+		font-size: 35px;
+	}
+	.say-about-me__title_hyphen {
+    	margin: 38px 0 6px 0;
+    	font-size: 35px;
+    	&:before,
+        &:after {
+            content: ' - ';
+            color: #000;
+            opacity: 0.3;
+            font-size: 35px;
+        }
+	}
+	.say-about-me__title__img-wrapper {
+    	margin-left: -130px;
+    	top: 24px;
+    	max-width: 268px;
+	}
+	// AUTHORIZE
+	.authorize {
+		float: none;
+	    position: absolute;
+	    left: 50%;
+	    margin: 10px 0 0 -90px;
+	    width: 180px;
+	}
+
+
+}
+
+@media screen and (max-width: 418px){
+	// ABOUT ME
+	.page-contact{
+		margin-bottom: -225px;
+	}
+	.contact__list {
+		position: static;
+	    background: #fff;
+	    width: 100%;
+	    margin: 0;
+	    border-radius: 0;
+	    min-height: 256px;
+	}
+	.contact__list__title {
+    	padding: 30px 0 20px 0;
+	}
+	.contact__list__detail {
+    	padding: 0 0 0 10px;
+	}
+	    // BLOG
+    .page-articles {
+    	padding: 0 10px 0 10px;
+	}
+    .list-article {
+    	display: none;
+    }
+    .section {
+    	margin: 0;
+    	max-width: 100%;
+	}
+	.article {
+		padding: 28px 0;
+	}
+	.article__title {
+    	font-size: 21px;
+    	margin-bottom: 20px;
+	}
+	.article__text {
+		font-size: 12px;
+	}
+	.article__text__title {
+		font-size: 18px;
+	}
+	.article__code {
+    	font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 360px){
+	// ABOUT ME
+	.page-header {
+	    background: url(/assets/img/images_png/bg_welcome_mountains_320.png) no-repeat center;
+	    background-size: cover;
+	    background-position: top;
+	    min-height: 556px;
+	}
+	.social {
+    	padding: 12px 0 0 10px;
+	}
+	.menu {
+    	padding: 10px 10px 0 0;
+	}
+	.about-developer {
+		top: 115px;
+	}
+	.about-developer__name {
+    	font-size: 21px;
+    }
+    .about-developer__info {
+    	font-size: 14px;
+    }
+    .about-me__title {
+    	font-size: 35px;
+    	margin: 30px 0;
+    }
+    .about-me__title__img-wrapper {
+    	width: 200px;
+    	margin-left: -100px;
+    	top: -20px;
+    }
+    .about-me__detail__img-wrapper {
+    	margin: 0 auto;
+	}
+	.about-me__detail__title {
+    	font-size: 21px;
+    	margin: 30px auto 20px auto;
+    	&:before,
+    	&:after{
+    		font-size: 21px;
+    	}
+	}
+	.about-me__detail__text {
+    	padding:0 10px;
+    	&:last-child {
+    		margin-bottom: 30px;
+    	}
+	}
+	.skills {
+    	padding: 0 0 29px 0;
+	}
+	.skills__title{
+		font-size: 21px;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+	.skills__title_hyphen{
+		&:before,
+    	&:after{
+    		font-size: 21px;
+    	}
+	}
+	.skills__description {
+		margin-bottom: 30px;
+		padding:0 10px;
+	}
+	.programming__technologies {
+    	margin: 0 15px 40px 15px;
+    	&:last-child{
+    		margin: 0 15px 40px 15px;
+    	}
+    }
+    .page-contact {
+    	min-height: 940px;
+	}
+	// WORK
+	.my-work__title {
+    	font-size: 35px;
+    	padding: 20px 0 30px 0;
+	}
+	.my-work__title__img-wrapper {
+    	width: 244px;
+    	margin-left: -115px;
+    	margin-top: -4px;
+	}
+	.page-form {
+    	background: url(/assets/img/images_png/bg_work_mountains-sea_320.png) no-repeat center;
+    	background-position: bottom;
+    	min-height: 1090px;
+    	background-size: cover;
+	}
+	.reviews__left-wrapper {
+    	margin: 22px 3% 0;
+    	width: 94%;
+	}
+	.reviews__quotes {
+		margin-bottom: 8px;
+		text-align: center;
+	}
+	.feedback {
+    	width: 300px;
+	}
+	.feedback__title {
+		font-size: 21px;
+		margin: 33px 0 20px 0;
+		&:before,
+        &:after {
+            content: ' - ';
+            color: #000;
+            opacity: 0.3;
+            font-size: 21px;
+        }
+	}
+	.form__style {
+    	width: 220px;
+	}
+	.form__btn__item {
+    	width: 150px;
+	}
+	// BLOG
+	.page-header-blog {
+    	background: url(/assets/img/images_png/bg_welcome_mountains_320.png) no-repeat center;
+		background-position:top;
+		background-size: cover;
+		min-height: 556px;
+	}
+	.about-developer-blog__title {
+    	font-size: 35px;
+	}
+	.blog_img {
+		background-size: 170px;
+	}
+	// AUTHORIZE
+	.welcome {
+    	background: url(/assets/img/images_png/bg_welcome_mountains_320.png) no-repeat center;
+   		background-size: cover;
+   	}
+   	.developer {
+   		top:92px;
+   		min-width: 300px;
+   		height: 398px;
+   		margin: 0 0 0 -150px;
+   	}
+   	.developer__name {
+   		font-size: 21px;
+   	}
+   	.developer__info {
+   		font-size: 14px;
+   	}
+   	.social__list {
+   		margin-bottom: 36px;
+   	}
+   	.page-nav__link {
+   		font-size: 14px;
+   		padding: 13px 22px;
+   	}
+}
