@@ -46,12 +46,21 @@
 		top:190px;
 		margin-left: -136.5px;
 	}
+	.list-article{
+		&__sticky {
+	        position: fixed;
+	        left: 96px;
+	    }
+	}
 	.section {
 		width: auto;
 		max-width: 64%;
 	}
 	.page-articles {
     	padding: 0 0 0 128px;
+    	&_scroll{
+       		padding: 0 0 0 31%;
+    	}
 	}
 	// AUTHORIZE
 	.welcome {
@@ -142,8 +151,41 @@
     .page-articles {
     	padding: 0 36px 0 24px;
 	}
-    .list-article {
-    	display: none;
+	// Скрытие сайдбара
+    .list-article {  
+    	width: 212px;
+	    position: fixed;
+	    top: 0;
+	    left: -284px;
+	    background: #00bfa5;
+	    height: 100%;
+	    padding: 44% 0 0 70px;
+	    margin-top: 0;
+	    transition-duration: 0.5s;
+	    z-index: 99999;
+	    &:before{
+	    	position:absolute;
+	    	content:'';
+	    	top: 55%;
+    		right: -12px;
+	    	background: #00bfa5;
+	    	width: 60px;
+	    	height: 60px;
+	    	border-radius:50%;
+	    }
+    	&:hover:before{
+    		cursor: pointer;
+    	}
+    }
+    .list-article__name__link {
+    	color: #fff;
+    	&:active{
+    		color: #fff;
+    	}
+    }
+    .open-sidebar{
+    	left: 0;
+    	transition-duration: 0.5s;
     }
     .section {
     	margin: 0;
@@ -173,6 +215,18 @@
 }
 
 @media screen and (max-width: 768px){
+	// MENU
+	.menu__list__link{
+		&:before {
+            left: 5%;
+            right: 5%;
+        }
+		&:hover:before{
+	        left: 20%;
+	        right: 20%;
+	        opacity: 1;
+        }
+	}
 	// ABOUT ME
 	.page-header {
 	    background: url(/assets/img/images_png/bg_about_mountains_768.png) no-repeat center;
@@ -437,6 +491,11 @@
 }
 
 @media screen and (max-width: 418px){
+	// MENU
+	.menu__list__link{
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
 	// ABOUT ME
 	.page-contact{
 		margin-bottom: -225px;
@@ -459,9 +518,6 @@
     .page-articles {
     	padding: 0 10px 0 10px;
 	}
-    .list-article {
-    	display: none;
-    }
     .section {
     	margin: 0;
     	max-width: 100%;
@@ -486,6 +542,18 @@
 }
 
 @media screen and (max-width: 360px){
+	// MENU
+	.menu__list__link{
+		&:before {
+            left: 3%;
+            right: 3%;
+        }
+		&:hover:before{
+	        left: 15%;
+	        right: 15%;
+	        opacity: 1;
+        }
+	}
 	// ABOUT ME
 	.page-header {
 	    background: url(/assets/img/images_png/bg_welcome_mountains_320.png) no-repeat center;
@@ -587,6 +655,7 @@
 	}
 	.feedback {
     	width: 300px;
+    	min-height: 390px;
 	}
 	.feedback__title {
 		font-size: 21px;
@@ -642,4 +711,7 @@
    		font-size: 14px;
    		padding: 13px 22px;
    	}
+   	.copyrate-autorize {
+    	bottom: 10px;
+	}
 }

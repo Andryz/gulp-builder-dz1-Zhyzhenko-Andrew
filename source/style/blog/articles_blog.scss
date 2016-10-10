@@ -1,6 +1,9 @@
 .page-articles {
     background: #fff;
     padding: 0 310px 0 128px;
+    &_scroll{
+       padding: 0 162px 0 25%;
+    }
 }
 
 .list-article {
@@ -12,11 +15,6 @@
         width: 270px;
         text-align: right;
         margin-bottom: 12px;
-     //    &:focus {
-     //    	color: #00bfa5;
-     //        font-weight: 700;
-     //    	border-right: 3px solid #00bfa5;
-    	// }
         &__link {
         	display: block;
         	padding: 15px 15px 15px 0;
@@ -25,12 +23,23 @@
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
-            &:focus {
+            &:active {
                 color: #00bfa5;
                 font-weight: 700;
                 border-right: 3px solid #00bfa5;
             }
+            &_scroll{
+                color: #00bfa5;
+                font-weight: 700;
+                border-right: 3px solid #00bfa5;  
+            }
         }
+    }
+    &__sticky {
+        position: fixed;
+        top: 0;
+        left: 32px;
+        transition: all 1.6s ease;
     }
 }
 
