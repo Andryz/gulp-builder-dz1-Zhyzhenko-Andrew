@@ -18,8 +18,29 @@
 	href:'blog.html',
 	nameLink:'blog'}]
 header.welcome
+	.parallax
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-10.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-9.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-8.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img.parallax__img_07(src="/assets/img/images_png/paralax-7.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-6.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-5.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img.parallax__img_04(src="/assets/img/images_png/paralax-4.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-3.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-2.png" alt="Горы")
+		.parallax__layer
+			img.parallax__img(src="/assets/img/images_png/paralax-1.png" alt="Горы")
 	a(href= '#' class='authorize') Авторизоваться
-	.flip-container(ontouchstart="this.classList.toggle('hover');")
+	.flip-container
 		.flipper
 			.developer
 				img.developer__avatar(src='/assets/img/images_png/i-am.png', alt='Andrew Zhyzhenko')
@@ -36,22 +57,22 @@ header.welcome
 							a(href=navigation.href class='page-nav__link page-nav__link_'+ navigation.nameLink)= navigation.name
 			.authorizhe-form
 				.authorizhe-form__title Авторизуйтесь
-				form.authorizhe-form__conteiner(action="#")
+				form.authorizhe-form__conteiner(action="" id="form" )
 					p.input-login
-						input.authorizhe-form__style.authorizhe-form__style_login(type="name" name="name" placeholder="Логин" required='')
+						input.authorizhe-form__style.authorizhe-form__style_login(type="name" name="name" placeholder="Логин" )
 						i.fa.fa-user.input-login__font-imge(aria-hidden='true')
 					p.input-login
-						input.authorizhe-form__style.authorizhe-form__style_password(type="password" name="password" placeholder="Пароль" required='')
+						input.authorizhe-form__style.authorizhe-form__style_password(type="password" name="password" placeholder="Пароль" )
 						i.fa.fa-key.input-login__font-imge(aria-hidden='true')
 					.checkbox
-						input.checkbox__input(type="checkbox" name="checkbox" id="person")
+						input.checkbox__input(type="checkbox" name="checkbox")
 						label.checkbox__label(for="person") Я человек
 					p.qwestion Вы точно не робот?
 					.radio
-						input.radio__input(type="radio" id="yes" name="radio")
+						input.radio__input(type="radio" name="radio")
 						label.radio__label(for="yes") Да
 
-						input.radio__input(type="radio" id="no" name="radio")
+						input.radio__input(type="radio" name="radio")
 						label.radio__label(for="no") Не уверен
 					.authorize-btn.clearfix
 						input.authorize-btn__item.authorize-btn__item_home(type="reset" name="reset" value="На главную")

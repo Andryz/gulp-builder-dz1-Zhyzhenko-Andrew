@@ -389,6 +389,9 @@
     	background: url(/assets/img/images_png/bg_welcome_mountains_768.png) no-repeat center;
    		background-size: cover;
    	}
+   	.parallax {
+    display: none;
+	}
 
 }
 
@@ -451,7 +454,7 @@
 		bottom:10px;
 	}
 	.slider__arrow_left {
-    	top: 179px;
+    	top: 210px;
     	padding: 270px 38px 270px 4px;
 	}
 	.slider__arrow_right {
@@ -537,6 +540,50 @@
 	}
 	.article__code {
     	font-size: 13px;
+	}
+	// AUTHORIZE
+	.welcome {
+    	background: url('/assets/img/images_png/bg_welcome_mountains_320.png') no-repeat center;
+   		background-size: cover;
+   	}
+	.flip-container {
+	    margin: -196px 0 0 -150px;
+	    min-width: 300px;
+	    min-height: 388px;
+	    max-width: 305px;
+	    max-height: 418px;
+	}
+   	.developer, .authorizhe-form{
+   		top:92px;
+   		min-width: 300px;
+   		max-width: 305px;
+   		height: 398px;
+   	}
+   	.developer__name {
+   		font-size: 21px;
+   	}
+   	.developer__info {
+   		font-size: 14px;
+   	}
+   	.social__list {
+   		margin-bottom: 36px;
+   	}
+   	.page-nav__link {
+   		font-size: 14px;
+   		padding: 13px 22px;
+   	}
+	.radio {
+		margin: 0 0 32px 0;
+	}
+	.authorize-btn{
+		min-width: 308px;
+	}
+	.authorize-btn__item{
+		width: 153px;
+		font-size: 14px;
+	}
+   	.copyrate-autorize {
+    	bottom: 5px;
 	}
 
 }
@@ -687,31 +734,5 @@
 	.blog_img {
 		background-size: 170px;
 	}
-	// AUTHORIZE
-	.welcome {
-    	background: url(/assets/img/images_png/bg_welcome_mountains_320.png) no-repeat center;
-   		background-size: cover;
-   	}
-   	.developer {
-   		top:92px;
-   		min-width: 300px;
-   		height: 398px;
-   		margin: 0 0 0 -150px;
-   	}
-   	.developer__name {
-   		font-size: 21px;
-   	}
-   	.developer__info {
-   		font-size: 14px;
-   	}
-   	.social__list {
-   		margin-bottom: 36px;
-   	}
-   	.page-nav__link {
-   		font-size: 14px;
-   		padding: 13px 22px;
-   	}
-   	.copyrate-autorize {
-    	bottom: 10px;
-	}
+	
 }

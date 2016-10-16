@@ -1,12 +1,46 @@
 .welcome {
     background: url('/assets/img/images_png/bg_welcome_mountains_1800.png') no-repeat center;
+    overflow: hidden;
     background-size: cover;
     min-height: 100%;
     width: 100%;
     position: relative;
 }
-
+.parallax{
+    overflow: hidden;
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom:-20%;
+    right: 0;
+    &__layer{
+        width: 2200px;
+        margin-left: -1100px;
+        left: 50%;
+        // width: 100%;
+        height: 100%;
+        bottom: 0;
+        // bottom:-40%;
+        position: absolute;
+    }
+    &__img{
+        display: block;
+        position:absolute;
+        bottom:0;
+        &_04{
+            bottom: 676px;
+            left: 714px;
+        }
+        &_07{
+            width: 400px;
+            bottom: 882px;
+            right: 272px;
+        }
+    }
+}
 .authorize {
+    position: absolute;
+    right: 0;
     display: block;
     text-decoration: none;
     border: 2px solid rgba(#fff, 0.7);
@@ -343,14 +377,14 @@
 .flip-container {
     min-width: 380px;
     min-height: 388px;
-    max-width: 396px;
+    max-width: 388px;
     max-height: 418px;
   
 }
 
 /* разворот контейнера при наведении */
 .flip-container .flipper, .flip-container.hover .flipper {
-        transform: rotateY(180deg);
+        transform: rotateY(0deg);
 }
 
 
@@ -383,5 +417,5 @@
 }
 
 .rotate-authorize{
-    transform: none;
+    transform: rotateY(180deg)!important;
 }
