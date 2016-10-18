@@ -27,21 +27,24 @@
 				.reviews__human__detail
 					p.reviews__human__name Зар Захаров
 					p.reviews__human__about преподаватель
-	//- ФОРМА ОБРАТНОЙ СВЯЗИ
+		//- ФОРМА ОБРАТНОЙ СВЯЗИ
 	.feedback
-		.feedback__title СВЯЗАТЬСЯ СО МНОЙ
-		form.feedback__form(action="#" class='write-me' id="form")
-			//-Hidden Required Fields
-			input(type="hidden" name="project_name" value="Portfolio")
-			input(type="hidden" name="admin_email" value="andryz9009@gmail.com")
-			input(type="hidden" name="form_subject" value="Form work")
-			//-END Hidden Required Fields
-			input.form__style.form__style_name(type="name" name="name" placeholder="Имя" )
-			input.form__style.form__style_email(type="email" name='mail' placeholder="Email" )
-			textarea.form__style.form__style_message(rows='6', cols='50', name='subject', placeholder='Ваше сообщение')
-			.form__btn.clearfix
-				input.form__btn__item.form__btn__item_submit(name='submit', type='submit', value='Отправить')
-				input.form__btn__item.form__btn__item_clear(name='clear', type='reset', value='Очистить')
+		.feedback__wrapp-blur
+			.feedback__blur
+		.feedback__wrapp-forms
+			.feedback__title СВЯЗАТЬСЯ СО МНОЙ
+			form.feedback__form(action="#" class='write-me' id="form")
+				//-Hidden Required Fields
+				input(type="hidden" name="project_name" value="Portfolio")
+				input(type="hidden" name="admin_email" value="andryz9009@gmail.com")
+				input(type="hidden" name="form_subject" value="Form work")
+				//-END Hidden Required Fields
+				input.form__style.form__style_name(type="name" name="name" placeholder="Имя" )
+				input.form__style.form__style_email(type="email" name='mail' placeholder="Email" )
+				textarea.form__style.form__style_message(rows='6', cols='50', name='subject', placeholder='Ваше сообщение')
+				.form__btn.clearfix
+					input.form__btn__item.form__btn__item_submit(name='submit', type='submit', value='Отправить')
+					input.form__btn__item.form__btn__item_clear(name='clear', type='reset', value='Очистить')
 	//- КОНЕЦ ФОРМЫ
 	a(href='#' class='page-up page-up_arrow')
 		i(class='fa fa-chevron-up' aria-hidden='true')

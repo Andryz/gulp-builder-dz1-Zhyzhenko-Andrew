@@ -76,11 +76,11 @@
     // СТИЛИ ДЛЯ ФОРМЫ
 }
 .feedback{
+    position: relative;
     overflow: hidden;
     width: 380px;
     min-height: 438px;
     margin: 0 auto;
-    background: rgba(#eaeaea, 0.8);
     border-radius:4px;
     &__title{
         margin:38px 0;
@@ -98,6 +98,26 @@
             font-size: 35px;
         }
 
+    }
+    &__wrapp-blur{
+        position: absolute;
+        top: -469px;
+        width: 100%;
+        height: 910px;
+    }
+    &__blur{
+        position: absolute;
+        bottom: -46px;
+        background: url(/assets/img/images_png/bg_work_mountains-sea_1800.png) no-repeat center;
+        background-size: 1903px;
+        background-position: center;
+        height: 910px;
+        width: 100%;
+        filter: blur(20px);
+    }
+    &__wrapp-forms{
+        position: absolute;
+        top: 0;
     }
 }
 .form__style{

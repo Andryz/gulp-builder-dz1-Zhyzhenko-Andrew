@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1200px){
 	// ABOUT ME
 	.page-header {
@@ -36,6 +37,10 @@
 	}
 	.page-form {
 		background: url(/assets/img/images_png/bg_work_mountains-sea_1200.png) no-repeat center;
+	}
+	.feedback__blur {
+    	bottom: -49px;
+    	background: url(/assets/img/images_png/bg_work_mountains-sea_1200.png) no-repeat center;
 	}
 	// BLOG
 	.page-header-blog {
@@ -147,6 +152,10 @@
     }
     .slider__list {
     }
+    // WORK
+    .feedback__blur {
+        bottom: -68px;
+	}
     // BLOG
     .page-articles {
     	padding: 0 36px 0 24px;
@@ -306,6 +315,11 @@
     	background: url(/assets/img/images_png/bg_work_mountains-sea_768.png) no-repeat center;
     	min-height: 978px;
 	}
+	// WORK
+    .feedback__blur {
+        bottom: 22px;
+        background: url(/assets/img/images_png/bg_work_mountains-sea_768.png) no-repeat center;
+	}
 	.say-about-me__title {
 			font-size: 0;
 		&_hyphen {
@@ -334,10 +348,14 @@
 	.reviews {
     	margin: 0 auto 50px auto;
 	}
-	.reviews__left-wrapper {
-		margin: 0 3%;
-   		width: 44%;
-   	}
+	// .reviews__left-wrapper {
+	// 	margin: 0 3%;
+ //   		width: 44%;
+ //   	}
+ 	.reviews__left-wrapper {
+    	margin: 22px 3% 0;
+    	width: 94%;
+	}
    	.reviews__quote__text {
    		font-size: 14px;
    	}
@@ -347,7 +365,7 @@
 	}
 	.feedback {
 		width: 348px;
-		min-height: 400px;
+		min-height: 408px;
 	}
 	.feedback__title {
 		margin: 38px 0 20px 0;
@@ -462,6 +480,9 @@
     	padding: 270px 4px 270px 38px;
 	}
 	// WORK
+	.feedback__blur {
+        bottom: -3px;
+	}
 	.say-about-me__title{
 		font-size: 35px;
 	}
@@ -692,9 +713,9 @@
     	min-height: 1090px;
     	background-size: cover;
 	}
-	.reviews__left-wrapper {
-    	margin: 22px 3% 0;
-    	width: 94%;
+	.feedback__blur {
+        bottom: -12px;
+        background: url(/assets/img/images_png/bg_work_mountains-sea_320.png) no-repeat center;
 	}
 	.reviews__quotes {
 		margin-bottom: 8px;
@@ -702,7 +723,7 @@
 	}
 	.feedback {
     	width: 300px;
-    	min-height: 390px;
+    	min-height: 402px;
 	}
 	.feedback__title {
 		font-size: 21px;
