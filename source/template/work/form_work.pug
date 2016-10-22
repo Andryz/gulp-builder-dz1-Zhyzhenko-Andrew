@@ -33,15 +33,16 @@
 			.feedback__blur
 		.feedback__wrapp-forms
 			.feedback__title СВЯЗАТЬСЯ СО МНОЙ
-			form.feedback__form(action="#" class='write-me' id="form")
+			form.feedback__form(action="#" class='write-me' method='#' id="form-validation")
+				.message-validation.message-validation_error
 				//-Hidden Required Fields
 				input(type="hidden" name="project_name" value="Portfolio")
 				input(type="hidden" name="admin_email" value="andryz9009@gmail.com")
 				input(type="hidden" name="form_subject" value="Form work")
 				//-END Hidden Required Fields
-				input.form__style.form__style_name(type="name" name="name" placeholder="Имя" )
-				input.form__style.form__style_email(type="email" name='mail' placeholder="Email" )
-				textarea.form__style.form__style_message(rows='6', cols='50', name='subject', placeholder='Ваше сообщение')
+				input.form__style.form__style_name(type="text" name="form_name" placeholder="Имя" )
+				input.form__style.form__style_email(type="email" name='form_email' placeholder="Email" )
+				textarea.form__style.form__style_message(rows='6', cols='50', name='form_subject', placeholder='Ваше сообщение')
 				.form__btn.clearfix
 					input.form__btn__item.form__btn__item_submit(name='submit', type='submit', value='Отправить')
 					input.form__btn__item.form__btn__item_clear(name='clear', type='reset', value='Очистить')

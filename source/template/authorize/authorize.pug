@@ -57,22 +57,22 @@ header.welcome
 							a(href=navigation.href class='page-nav__link page-nav__link_'+ navigation.nameLink)= navigation.name
 			.authorizhe-form
 				.authorizhe-form__title Авторизуйтесь
-				form.authorizhe-form__conteiner(action="" id="form" )
+				form.authorizhe-form__conteiner(action="" id="form-validation" )
 					p.input-login
-						input.authorizhe-form__style.authorizhe-form__style_login(type="name" name="name" placeholder="Логин" )
+						input.authorizhe-form__style.authorizhe-form__style_login(type="text" name="form_name" placeholder="Логин" )
 						i.fa.fa-user.input-login__font-imge(aria-hidden='true')
 					p.input-login
-						input.authorizhe-form__style.authorizhe-form__style_password(type="password" name="password" placeholder="Пароль" )
+						input.authorizhe-form__style.authorizhe-form__style_password(type="password" name="form_password" placeholder="Пароль" )
 						i.fa.fa-key.input-login__font-imge(aria-hidden='true')
 					.checkbox
-						input.checkbox__input(type="checkbox" name="checkbox")
+						input.checkbox__input(type="checkbox" name="form_checkbox" id="person")
 						label.checkbox__label(for="person") Я человек
 					p.qwestion Вы точно не робот?
 					.radio
-						input.radio__input(type="radio" name="radio")
+						input.radio__input(type="radio" name="form_radio" id="yes")
 						label.radio__label(for="yes") Да
 
-						input.radio__input(type="radio" name="radio")
+						input.radio__input(type="radio" name="form_radio" id="no")
 						label.radio__label(for="no") Не уверен
 					.authorize-btn.clearfix
 						input.authorize-btn__item.authorize-btn__item_home(type="reset" name="reset" value="На главную")

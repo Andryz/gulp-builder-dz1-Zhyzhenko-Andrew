@@ -39,17 +39,64 @@ footer *{
   		height: 141px; // Равно высоте футера
 	}
 }
-
+//MENU FIXED
+.menu-fixed{
+	position:fixed !important;
+	right: 12%;
+}
 // FORM VALIDATION
+.message-validation{
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #efa0a0;
+	color: #cc5555;
+	text-align: center;
+	font-size:14px;
 
-// .has-error {
-//  box-shadow: inset 0px 0px 0px 1px #e44845 ;
-//  background: #ffffff ; }
+	&:empty{
+		display: none;
+	}
+}
 
-// .tip-style {
-//  background: #e44845  !important;
-//  color: #ffffff  !important;
-//  border-color: #e44845  !important; }
+.form-input_error {
+  // border-color: #e85656;
+  // box-shadow: 0 0 25px #e85656;
+  	display: block;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
+.form-input_success {
+  border-color: #7dbf23;
+  box-shadow: 0 0 25px #7dbf23;
+}
+
+.input-login label.error{
+	position: absolute;
+    display: block;
+    margin-left: 25%;
+    margin-top: -14px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
+
+label.error{
+	position: absolute;
+    display: block;
+    margin-left: 21%;
+    margin-top: -33px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
 
 // PRELOADER
 .preloader {
