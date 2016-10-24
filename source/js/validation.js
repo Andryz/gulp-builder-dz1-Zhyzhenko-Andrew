@@ -15,6 +15,12 @@ var ValidationModule = (function () {
 	            form_password: {
 	                required: true,
 	                minlength: 6
+	            },
+	            form_radio: {
+	                required: true
+	            },
+	            form_checkbox: {
+	                required: true
 	            }
 	        },
 	        messages: {

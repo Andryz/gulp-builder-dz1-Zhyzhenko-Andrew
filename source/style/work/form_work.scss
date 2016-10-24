@@ -116,7 +116,7 @@
         filter: blur(20px);
     }
     &__wrapp-forms{
-        position: absolute;
+        position: relative;
         top: 0;
     }
 }
@@ -131,15 +131,6 @@
     background:#fff;
     border:none;
     padding:13px 20px;
-    // &:focus{
-    //     outline: 0;
-    //     border-color: #6ebbd8;
-    //     box-shadow: 0 0 5px #6ebbd8;
-    // }
-    // &.error{
-    //     box-shadow: 0 0 18px #e85656;
-    //     border: 1px #e85656 solid;
-    // }
     &_message{
         resize: none;
     }
